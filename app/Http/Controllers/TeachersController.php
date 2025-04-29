@@ -14,7 +14,7 @@ class TeachersController extends Controller
         if (auth()->user()->role !== 'teacher') {
             abort(403, 'Unauthorized action.');
         }
-        $projects = Project::all();
+        $projects = Project::where('user_id', auth()->id())->get();
         return view('teachers.list', compact('projects'));
   
     }

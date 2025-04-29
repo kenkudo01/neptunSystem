@@ -17,7 +17,8 @@
               <h5 class="card-title"><a href="teachers/{{ $project->id}}">{{ $project->name }}</a></h5>
               <p class="card-text">{{ $project->description }}</p>
               <p class="card-text"><small class="text-muted">{{ $project->code }}  : {{ $project->credit }} credit </small></p>
-              <p class="card-text"><small class="text-muted">teacher's name.</small></p>
+              <p class="card-text"><small class="text-muted">{{ $project->teacher->name }}</small></p>
+
               <div>
               <a href="{{ route('teachers.edit', ['id' => $project->id]) }}" class="btn btn-primary">Edit</a>
 

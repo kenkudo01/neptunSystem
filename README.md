@@ -10,13 +10,13 @@ Students’ regulation of Eötvös Loránd University (ELTE Regulations Vol. II.
 
 ## Criteria
 
--   [ ] App can be started with the given commands (2.0 pts)
--   [ ] Appropriate database tables (1.0 pts)
+-   [X] App can be started with the given commands (2.0 pts)
+-   [X] Appropriate database tables (1.0 pts)
 -   [x] Good-looking design (3.0 pts)
 -   [x] Main page (1.0 pts)
 -   [x] Contact (1.0 pts)
 -   [x] Login and registration (1.0 pts)
--   [ ] Teacher or student (2.0 pts)
+-   [X] Teacher or student (2.0 pts)
 -   [x] Logout (1.0 pts)
 -   [x] Teacher functions: Menu (2.0 pts)
 -   [x] Teacher functions: Teacher's homepage (2.0 pts)
@@ -29,7 +29,7 @@ Students’ regulation of Eötvös Loránd University (ELTE Regulations Vol. II.
 -   [X] Teacher functions: Task details (3.0 pts)
 -   [x] Teacher functions: Edit a task (3.0 pts)
 -   [X] Teacher functions: Solution list (3.0 pts)
--   [ ] Teacher functions: Evaluate a solution (3.0 pts)
+-   [X] Teacher functions: Evaluate a solution (3.0 pts)
 -   [x] Student functions: Menu (2.0 pts)
 -   [x] Student functions: Student homepage (2.0 pts)
 -   [x] Student functions: Leave a subject (2.0 pts)
