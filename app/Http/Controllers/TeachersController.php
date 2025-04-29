@@ -14,9 +14,6 @@ class TeachersController extends Controller
         if (auth()->user()->role !== 'teacher') {
             abort(403, 'Unauthorized action.');
         }
-
-
-        // $projects = \App\Models\Project::where('user_id', auth()->id())->get();
         $projects = Project::all();
         return view('teachers.list', compact('projects'));
   
@@ -38,7 +35,7 @@ class TeachersController extends Controller
         $validated['user_id'] = auth()->id(); 
         Project::create($validated);
         return redirect("teachers");
-        // return redirect()->route('teachers.index')->with('success', 'Subject created successfully!');
+       
     }
 
     public function createTask($project_id)

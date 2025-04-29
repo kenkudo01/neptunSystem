@@ -19,7 +19,7 @@ class LmsSeeder extends Seeder
         //teacher
         $teacher = User::create([
             'name' => 'ken kudo',
-            'email' => 'kudo@gmail.com',
+            'email' => 'teacher@gmail.com',
             'password' => Hash::make('password123'),
             'role' => 'teacher',
         ]);
@@ -67,9 +67,42 @@ class LmsSeeder extends Seeder
         ]);
 
 
+        $teacher2 = User::create([
+            'name' => 'Jane Smith',
+            'email' => 'jane.smith@gmail.com',
+            'password' => Hash::make('password123'),
+            'role' => 'teacher',
+        ]);
+    
+        $project4 = Project::create([
+            'name' => 'Web Design',
+            'description' => 'HTML, CSS, and UI principles.',
+            'code' => 'IK-WEB101',
+            'credit' => 3,
+            'user_id' => $teacher2->id,
+        ]);
+    
+        $project5 = Project::create([
+            'name' => 'JavaScript Essentials',
+            'description' => 'Master JS fundamentals.',
+            'code' => 'IK-JS201',
+            'credit' => 4,
+            'user_id' => $teacher2->id,
+        ]);
+    
+        $project6 = Project::create([
+            'name' => 'React Introduction',
+            'description' => 'Start building React apps.',
+            'code' => 'IK-REACT301',
+            'credit' => 3,
+            'user_id' => $teacher2->id,
+        ]);
+
+
+        //student
         $student = User::create([
-            'name' => 'ken kudo',
-            'email' => 'ken@gmail.com',
+            'name' => 'ken',
+            'email' => 'student@gmail.com',
             'password' => Hash::make('password123'),
             'role' => 'student',
         ]);

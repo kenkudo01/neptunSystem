@@ -10,8 +10,8 @@ return new class extends Migration
     {
         Schema::create('project_user', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('user_id');    // 生徒のID
-            $table->unsignedBigInteger('project_id'); // 科目のID
+            $table->unsignedBigInteger('user_id');    
+            $table->unsignedBigInteger('project_id'); 
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');

@@ -1,4 +1,4 @@
-@extends("layouts.teacher_main")
+@extends("layouts.student_main")
 
 @section("content")
 <div class="container py-3">
