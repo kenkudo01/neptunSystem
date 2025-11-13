@@ -37,3 +37,7 @@ Students’ regulation of Eötvös Loránd University (ELTE Regulations Vol. II.
 -   [X] Student functions: Subject details (2.0 pts)
 -   [X] Student functions: Tasks related to the subject (3.0 pts)
 -   [X] Student functions: Submit a task (3.0 pts)
+
+
+npm run dev
+php artisan dev
